@@ -11,16 +11,8 @@ function Filters({ ApplyFilters }) {
   var apiUrl = 'https://easyhome-1-y9546418.deta.app/api/v1/'
   
   const handleApplyFilters = () => {
-    const filters = {
-      priceto,
-      pricefrom,
-      city,
-      propertyType,
-      rooms,
-      sort
-    };
     apiUrl = apiUrl + propertyType +"/"
-    if(city=="")
+    if(city==="")
     {
         apiUrl=apiUrl+"?"
     }

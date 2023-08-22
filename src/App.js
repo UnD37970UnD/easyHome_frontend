@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import ArticlesView from "./components/articleListView"
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
-import { fetchArticles } from './components/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Filters from './components/filters';
 
@@ -15,8 +13,14 @@ function App() {
   
 
   useEffect(() => {
-    fetchArticles(ApiUrl,setArticlesList);
-  });
+    axios.get(ApiUrl)
+    .then(res => {
+      setArticlesList(res.data.data);
+    })
+    .catch(error => {
+      console.error('Error fetching articles:', error);
+    },[]);
+  }, [ApiUrl]);
 
   const ApplyFilters = (Url) => {
     setApiUrl(Url)
