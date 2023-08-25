@@ -11,16 +11,17 @@ function App() {
   const [ArticlesList, setArticlesList] = useState([{}])
   const [noArticles, setNoArticles] = useState('')
   const [ApiUrl, setApiUrl] = useState("https://easyhome-1-y9546418.deta.app/api/v1/de_inchiriat/?from_price=0&to_price=99999999&skip=0&lenght=40")
-  
- 
+  const [NextUrl, setNextUrl] =useState("")
 
   useEffect(() => {
     axios
       .get(ApiUrl)
       .then((res) => {
+        
         if (res.data.data === undefined || res.data.data.length === 0) {
           setNoArticles('empty');
         } else {
+          setNextUrl(res.data.info.next_url)
           setNoArticles('data');
           setArticlesList(res.data.data);
         }
@@ -53,9 +54,13 @@ function App() {
           <h4 className='card text-white bg-dark mb-3'>Anunturi</h4>
             <Suspense fallback={<div>Loading...</div>}>
               <ToView/>
-            
             </Suspense>
-        </div>
+            <button className="btn btn-primary mb-4" onClick={() => {
+              ApplyFilters(NextUrl);
+              window.scrollTo(0, 0);
+              }
+              }>Urmatoarea pagina</button>
+          </div>
 
       </div>
     </div>
