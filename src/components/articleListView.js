@@ -9,7 +9,7 @@ export default function ArticlesView(props) {
     let currentRow = [];
 
     ArticlesList.forEach((article, index) => {
-      currentRow.push(ArticleItem(article,index));
+      currentRow.push(<ArticleItem key={index} articol={article} index={index} />);
 
       if (currentRow.length === 3 || index === ArticlesList.length - 1) {
         rows.push(

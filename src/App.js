@@ -12,31 +12,33 @@ function App() {
   const [noArticles, setNoArticles] = useState('')
   const [ApiUrl, setApiUrl] = useState("https://easyhome-1-y9546418.deta.app/api/v1/de_inchiriat/?from_price=0&to_price=99999999&skip=0&lenght=40")
   
-  
+ 
 
   useEffect(() => {
-    axios.get(ApiUrl)
-    .then(res => {
-      if (res.data.data === undefined || res.data.data.length == 0)
-        setNoArticles("empty");
-      else
-        setNoArticles("data");
-        setArticlesList(res.data.data);
-    })
-    .catch(error => {
-      console.error('Error fetching articles:', error);
-    },[]);
-  }, [ApiUrl]);
+    axios
+      .get(ApiUrl)
+      .then((res) => {
+        if (res.data.data === undefined || res.data.data.length === 0) {
+          setNoArticles('empty');
+        } else {
+          setNoArticles('data');
+          setArticlesList(res.data.data);
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching articles:', error);
+      });}, [ApiUrl]);
 
   const ApplyFilters = (Url) => {
-    setApiUrl(Url)
+    setApiUrl(Url);
   };
-  function ToView(){
-    if(noArticles=="empty")
-    {
-        return(<h3>Nu am gasit imobiliarea aici</h3>)
+
+  function ToView() {
+    if (noArticles === 'empty') {
+      return <h3>Nu am gasit imobiliarea aici</h3>;
+    } else {
+      return <ArticlesView ArticlesList={ArticlesList} />;
     }
-    else return (<ArticlesView ArticlesList={ArticlesList}/>)
   }
   return (
     <div className='App container-xxl'>

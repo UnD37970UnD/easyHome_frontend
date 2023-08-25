@@ -43,10 +43,11 @@ function Filters({ ApplyFilters }) {
       <div className='form-row position-relative from-group m-2 border rounded' style={{"height":"auto", "paddingTop":"15px"}}>
       <label 
         className="position-absolute top-0 start-0"
-        style={{"pointerEvents": "none","padding": "1rem .75rem","color": "rgba(var(--bs-body-color-rgb),.65)","transform": "scale(.85) translateY(-.5rem) translateX(.15rem)","transition": "opacity .1s ease-in-out,transform .1s ease-in-out","transformOrigin": "0 0" ,"zIndex":"2"}}>
+        style={{"pointerEvents": "none","padding": "1rem .75rem","color": "rgba(var(--bs-body-color-rgb),.65)","transform": "scale(.85) translateY(-.5rem) translateX(.15rem)","transition": "opacity .1s ease-in-out,transform .1s ease-in-out","transformOrigin": "0 0" ,"zIndex":"3"}}>
         Pret:
       </label>
         <div className='input-group'>
+            <span class="input-group-text mt-1 border-0" style={{"backgroundColor": "#fff"}}>€</span>
             <input
             className='form-control mt-1 border-0'
             type="number"
