@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.292716c7.css",
-    "main.js": "/frontend/static/js/main.dfaa6d7e.js",
-    "static/js/189.aa1f8059.chunk.js": "/frontend/static/js/189.aa1f8059.chunk.js",
-    "static/js/787.cda612ba.chunk.js": "/frontend/static/js/787.cda612ba.chunk.js",
-    "index.html": "/frontend/index.html",
-    "main.292716c7.css.map": "/frontend/static/css/main.292716c7.css.map",
-    "main.dfaa6d7e.js.map": "/frontend/static/js/main.dfaa6d7e.js.map",
-    "189.aa1f8059.chunk.js.map": "/frontend/static/js/189.aa1f8059.chunk.js.map",
-    "787.cda612ba.chunk.js.map": "/frontend/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/easyHome_frontend/static/css/main.292716c7.css",
+    "main.js": "/easyHome_frontend/static/js/main.8bef441e.js",
+    "static/js/189.c65a76ba.chunk.js": "/easyHome_frontend/static/js/189.c65a76ba.chunk.js",
+    "static/js/787.f47e74be.chunk.js": "/easyHome_frontend/static/js/787.f47e74be.chunk.js",
+    "index.html": "/easyHome_frontend/index.html",
+    "main.292716c7.css.map": "/easyHome_frontend/static/css/main.292716c7.css.map",
+    "main.8bef441e.js.map": "/easyHome_frontend/static/js/main.8bef441e.js.map",
+    "189.c65a76ba.chunk.js.map": "/easyHome_frontend/static/js/189.c65a76ba.chunk.js.map",
+    "787.f47e74be.chunk.js.map": "/easyHome_frontend/static/js/787.f47e74be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.292716c7.css",
-    "static/js/main.dfaa6d7e.js"
+    "static/js/main.8bef441e.js"
   ]
 }
