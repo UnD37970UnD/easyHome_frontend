@@ -10,7 +10,7 @@ Welcome to EasyHome, a real estate website that allows users to find their new h
 
 ## Live Website
 
-[Click Here]("https://und37970unD.github.io/easyHome_frontend)
+[Click Here](https://und37970und.github.io/easyHome_frontend/)
 ## Technologies Used
 
 - React.js
@@ -31,7 +31,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 

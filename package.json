@@ -1,6 +1,6 @@
 {
-  "name": "frontend",
-  "homepage": "https://und37970und.github.io/frontend",
+  "name": "easyHome_frontend",
+  "homepage": "https://und37970und.github.io/easyHome_frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
