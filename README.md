@@ -10,7 +10,7 @@ Welcome to EasyHome, a real estate website that allows users to find their new h
 
 ## Live Website
 
-[Click Here](https://und37970und.github.io/easyHome_frontend/)
+[Click Here](https://und37970und.github.io/easyHome_frontend/) (it maybe not working because of inactivity of the db)
 ## Technologies Used
 
 - React.js
